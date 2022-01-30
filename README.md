@@ -1,6 +1,6 @@
 # video2txt
 
-[TOC]
+{:TOC}
 
 > - version : 1.0
 > - author : ZhengYinloong
