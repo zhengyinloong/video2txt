@@ -57,7 +57,7 @@ video2txt包由我原来一时兴起写的的ImgToTxt模块发展而来，经过
 
 2. 安装好cv2后，直接下载或clone该仓库到你的设备上python解释器所在文件夹下 `Lib>site-packages` 中（如下图所示），即可在你的设备上任何IDE的.py文件中调用该包中任何模块、类和函数。
 
-   ![安装](README.assets/image-20220131000208929.png)
+   ![安装](./README.assets/image-20220131000208929.png)
 
 ## BUG
 
