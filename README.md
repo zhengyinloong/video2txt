@@ -13,13 +13,13 @@ video2txt包由我原来一时兴起写的的ImgToTxt模块发展而来，经过
 
 ## 各模块/文件功能概览
 
-|             模块/文件              |                       功能                       |                        包含的类或函数                        |
-| :--------------------------------: | :----------------------------------------------: | :----------------------------------------------------------: |
-|  [\__init__.py](#  \__init__.py)   |                    初始化参数                    |                       class：Video2Txt                       |
-|  [captureImg.py](# captureImg.py)  |              提取视频帧并保存为图片              | function：capPosFrame(), captureImgs(), do(), frameResize(), getTotalFrames(), saveImg(), showPosFrame() |
-| [putTxt2File.py](# putTxt2File.py) |  识别图片像素灰度并用字符代替，存放在txt文件中   | function：do(), getOneRowChar(), getText(), gray2Char(), imgResize(), putTxt2File() |
-|     [display.py](# display.py)     |             将txt文件依次输出在终端              |              function：clear(), do(), showTxt()              |
-|        [main.py](# main.py)        | 依次执行各模块do()函数，运行该程序可直接达到目的 |                        function：do()                        |
+|             模块/文件             |                       功能                       |                        包含的类或函数                        |
+| :-------------------------------: | :----------------------------------------------: | :----------------------------------------------------------: |
+|   [\__init__.py](#__init__.py)    |                    初始化参数                    |                       class：Video2Txt                       |
+|  [captureImg.py](#captureImg.py)  |              提取视频帧并保存为图片              | function：capPosFrame(), captureImgs(), do(), frameResize(), getTotalFrames(), saveImg(), showPosFrame() |
+| [putTxt2File.py](#putTxt2File.py) |  识别图片像素灰度并用字符代替，存放在txt文件中   | function：do(), getOneRowChar(), getText(), gray2Char(), imgResize(), putTxt2File() |
+|     [display.py](#display.py)     |             将txt文件依次输出在终端              |              function：clear(), do(), showTxt()              |
+|        [main.py](#main.py)        | 依次执行各模块do()函数，运行该程序可直接达到目的 |                        function：do()                        |
 
 ## 详细说明
 
@@ -65,5 +65,5 @@ video2txt包由我原来一时兴起写的的ImgToTxt模块发展而来，经过
 
 由于`captureImg.saveImg()`中调用了`cv2.imwrite()`函数,会出现内存中一直加载文件目录无法释放的问题，这会导致调用后无法对相关文件夹无法进行移动，重命名等操作。这个问题我也是在调试与使用中发现的，一直没有解决的办法😑，欢迎各位多多发pull request啊😀😀
 
-[TOP](# video2txt)
+[TOP](#video2txt)
 
