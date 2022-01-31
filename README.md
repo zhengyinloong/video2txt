@@ -6,6 +6,7 @@
 > - author : ZhengYinloong
 > - githubRep-url : [video2txt](https://github.com/zhengyinloong/video2txt)
 > - requirements : cv2, os
+> - environment : python3 on Windows10
 
 ## 简介
 
@@ -53,7 +54,9 @@ video2txt包由我原来一时兴起写的的ImgToTxt模块发展而来，经过
 
 ## 安装与使用
 
-1. `安装前提`：先安装cv2包
+> 由于本人是在Windows10的python3环境下开发和应用的该工具包，其他环境本人没有条件实验 :joy:
+
+1. `安装前提`：先安装cv2包 `pip install opencv-python`
 
 2. 安装好cv2后，直接下载或clone该仓库到你的设备上python解释器所在文件夹下 `Lib>site-packages` 中（如下图所示），即可在你的设备上任何IDE的.py文件中调用该包中任何模块、类和函数。
 
