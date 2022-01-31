@@ -15,11 +15,11 @@ video2txt包由我原来一时兴起写的的ImgToTxt模块发展而来，经过
 
 |             模块/文件             |                       功能                       |                        包含的类或函数                        |
 | :-------------------------------: | :----------------------------------------------: | :----------------------------------------------------------: |
-|   [\__init__.py](#__init__.py)    |                    初始化参数                    |                       class：Video2Txt                       |
-|  [captureImg.py](#captureImg.py)  |              提取视频帧并保存为图片              | function：capPosFrame(), captureImgs(), do(), frameResize(), getTotalFrames(), saveImg(), showPosFrame() |
-| [putTxt2File.py](#putTxt2File.py) |  识别图片像素灰度并用字符代替，存放在txt文件中   | function：do(), getOneRowChar(), getText(), gray2Char(), imgResize(), putTxt2File() |
-|     [display.py](#display.py)     |             将txt文件依次输出在终端              |              function：clear(), do(), showTxt()              |
-|        [main.py](#main.py)        | 依次执行各模块do()函数，运行该程序可直接达到目的 |                        function：do()                        |
+|   [\__init__.py](#__init__py)    |                    初始化参数                    |                       class：Video2Txt                       |
+|  [captureImg.py](#captureImgpy)  |              提取视频帧并保存为图片              | function：capPosFrame(), captureImgs(), do(), frameResize(), getTotalFrames(), saveImg(), showPosFrame() |
+| [putTxt2File.py](#putTxt2Filepy) |  识别图片像素灰度并用字符代替，存放在txt文件中   | function：do(), getOneRowChar(), getText(), gray2Char(), imgResize(), putTxt2File() |
+|     [display.py](#displaypy)     |             将txt文件依次输出在终端              |              function：clear(), do(), showTxt()              |
+|        [main.py](#mainpy)        | 依次执行各模块do()函数，运行该程序可直接达到目的 |                        function：do()                        |
 
 ## 详细说明
 
