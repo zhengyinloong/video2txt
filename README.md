@@ -54,7 +54,7 @@ video2txt包由我原来一时兴起写的的ImgToTxt模块发展而来，经过
 
 ## 安装与使用
 
-> 由于本人是在Windows10的python3环境下开发和应用的该工具包，其他环境本人没有条件实验 :joy:
+> 由于本人是在Windows10的python3环境下开发和应用的该工具包，其他环境本人没有条件实验😂
 
 1. `安装前提`：先安装cv2包 `pip install opencv-python`
 
