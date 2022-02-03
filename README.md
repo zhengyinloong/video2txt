@@ -1,6 +1,6 @@
 # video2txt
 
-{:TOC}
+[TOC]
 
 > - version : 1.0
 > - author : ZhengYinloong
@@ -17,10 +17,10 @@ video2txt包由我原来一时兴起写的的ImgToTxt模块发展而来，经过
 |             模块/文件             |                       功能                       |                        包含的类或函数                        |
 | :-------------------------------: | :----------------------------------------------: | :----------------------------------------------------------: |
 |   [\__init__.py](#__init__py)    |                    初始化参数                    |                       class：Video2Txt                       |
-|  [captureImg.py](#captureImgpy)  |              提取视频帧并保存为图片              | function：capPosFrame(), captureImgs(), do(), frameResize(), getTotalFrames(), saveImg(), showPosFrame() |
-| [putTxt2File.py](#putTxt2Filepy) |  识别图片像素灰度并用字符代替，存放在txt文件中   | function：do(), getOneRowChar(), getText(), gray2Char(), imgResize(), putTxt2File() |
+|  [captureImg.py](#captureimgpy)  |              提取视频帧并保存为图片              | function：capPosFrame(), captureImgs(), do(), frameResize(), getTotalFrames(), saveImg(), showPosFrame() |
+| [putTxt2File.py](#puttxt2filepy) |  识别图片像素灰度并用字符代替，并存放在txt文件中  | function：do(), getOneRowChar(), getText(), gray2Char(), imgResize(), putTxt2File() |
 |     [display.py](#displaypy)     |             将txt文件依次输出在终端              |              function：clear(), do(), showTxt()              |
-|        [main.py](#mainpy)        | 依次执行各模块do()函数，运行该程序可直接达到目的 |                        function：do()                        |
+|        [main.py](#mainpy)        | 包含一个do()函数，在终端使用do() |                        function：do()                        |
 
 ## 详细说明
 
@@ -44,13 +44,36 @@ video2txt包由我原来一时兴起写的的ImgToTxt模块发展而来，经过
 
 ### captureImg.py
 
-该模块的功能是提取视频帧并保存为图片
+该模块的功能是提取视频帧并保存为图片。
+
+包含的函数：
+
+- getTotalFrames()：获取视频总帧数。
+- capPosFrame()：获取视频特定帧。
+- frameResize()：重设获取到的帧宽和高。
+- saveImg()：对cv2.imwrite()重新封装，将像素矩阵保存为图片。
+- showPosFrame()：显示视频指定帧，默认彩色,不进行缩放。
+- captureImgs()：获取并保存视频所有帧，当然也可以指定帧间隔。
 
 ###  putTxt2File.py
 
+该模块功能是识别图片像素灰度并用字符代替，并存放在txt文件中。 
+
+包含的函数：
+
+- 
+
 ### display.py
 
+该模块功能是将txt文件依次输出在终端。
+
+包含的函数：
+
+- do()：将txt文件依次输出在终端。引用该函数的程序需要直接在终端执行。
+
 ### main.py
+
+包含一个do()函数，在终端执行该do()函数将直接输出转换成功的“字符画”视频（可能需要几分钟时间）
 
 ## 安装与使用
 
@@ -66,7 +89,7 @@ video2txt包由我原来一时兴起写的的ImgToTxt模块发展而来，经过
 
 该工具包目前有一个已知bug：
 
-由于`captureImg.saveImg()`中调用了`cv2.imwrite()`函数,会出现内存中一直加载文件目录无法释放的问题，这会导致调用后无法对相关文件夹无法进行移动，重命名等操作。这个问题我也是在调试与使用中发现的，一直没有解决的办法😑，欢迎各位多多发pull request啊😀😀
+由于`captureImg.saveImg()`中调用了`cv2.imwrite()`函数，会出现内存中一直加载文件目录无法释放的问题，这会导致调用后无法对相关文件夹无法进行移动，重命名等操作。这个问题我也是在调试与使用中发现的，一直没有解决的办法😑，欢迎各位多多发pull request啊😀😀
 
 [TOP](#video2txt)
 
